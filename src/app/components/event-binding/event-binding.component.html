@@ -1,0 +1,17 @@
+<!-- EVENT BINDING -->
+<!-- DE LA VISTA AL MODELO -->
+
+<!-- input -->
+<h3 [class]="miClase">Event Binding</h3>
+
+<!-- EVENT BINDING:::::AQUI -->
+<!-- output -->
+<button (click)="cambiaAFondoRojo($event)">fondo rojo</button>
+<button (click)="cambiaAFondoVerde($event)">fondo verde</button>
+
+
+<div>
+
+    <input (input)="onInput($event)" type="text">
+
+</div>

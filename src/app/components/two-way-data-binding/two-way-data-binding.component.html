@@ -1,0 +1,45 @@
+<div class="container-fluid">
+
+
+    <div class="mb-3">
+
+        <!-- el for del label es para que cuando clique en nombre el input se active -->
+        <label for="nombre" class="form-label">Nombre:</label>
+        <input id="nombre" type="text" class="form-control" 
+        placeholder="Introduce tu nombre" [(ngModel)]="miTexto">
+
+    </div>
+
+    <p>{{miTexto}}</p>
+
+</div>
+
+<div class="container">
+
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="mb-3">
+
+            <!-- el for del label es para que cuando clique en nombre el input se active -->
+            <label for="usuario" class="form-label">Usuario:</label>
+            <input id="usuario" name="usuario" type="text" class="form-control" 
+            placeholder="Introduce tu usuario" [(ngModel)]="credenciales.usuario">
+    
+        </div>
+
+
+        <div class="mb-3">
+
+            <!-- el for del label es para que cuando clique en nombre el input se active -->
+            <label for="password" class="form-label">Password:</label>
+            <input id="password" name="password" type="password" class="form-control" 
+            placeholder="Introduce tu contraseña" [(ngModel)]="credenciales.password">
+    
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+
+
+</div>
